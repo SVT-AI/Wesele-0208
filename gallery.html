@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria Hani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="password-screen" id="password-screen">
+    <h2>Podaj hasło, aby zobaczyć galerię</h2>
+    <input type="password" id="password-input" placeholder="Hasło" />
+    <button onclick="checkPassword()">Wejdź</button>
+    <p id="wrong-password" class="hidden">Nieprawidłowe hasło.</p>
+  </div>
+
+  <div id="gallery" class="hidden gallery-page">
+    <h1>Galeria Urodzin Hani 📸</h1>
+    <button onclick="enhanceImages()" class="btn">Upiększ zdjęcia ✨</button>
+    <div class="gallery" id="image-gallery">
+      <!-- Tu będą zdjęcia -->
+    </div>
+  </div>
+
+  <footer>
+    <img src="logo.png" alt="Logo" class="logo" />
+    <p>© 2025 SVT Studio. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
